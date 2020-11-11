@@ -1,0 +1,172 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: red;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: red;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{
+        float: left;
+        width: 100%;
+        padding: 10px;
+        background:rgb(79, 146, 247);
+        color: white;
+        font-size: 40px;
+        border: 40px solid rgb(79, 146, 247);
+        border-left: none;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      h2{
+        text-align: left;
+      }
+
+</style>
+</head>
+<body>
+
+
+<h1>AVENGERS CHARACTER SEARCH</h1>
+<h2>Search by Full Name or Alias</h2>
+
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="e.g. Captain America or Steve Rogers" name="search">
+  <button type="submit"><i class="Search"></i></button>
+</form>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{
+        float: left;
+        width: 100%;
+        padding: 10px;
+        background:rgb(79, 146, 247);
+        color: white;
+        font-size: 40px;
+        border: 40px solid rgb(79, 146, 247);
+        border-left: none;
+        cursor: pointer;
+        text-align: center;
+      }
+
+
+</style>
+</head>
+<body>
+    <html>
+        <body>
+        
+        <button type="button" onclick="loadDoc()">Request data</button>
+        
+        <p id="superheroes.php"></p>
+        
+        <script>
+        function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("superheroes.php").innerHTML = this.responseText;
+            }
+          };
+          xhttp.open("GET", "superheroes.php", true);
+          xhttp.send();
+        }
+        </script>
+        
+        </body>
+        </html>
+        
+<h1>AVENGERS CHARACTER SEARCH</h1>
+<h2>Search by Full Name or Alias</h2>
+
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="e.g. Captain America or Steve Rogers" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</body>
+</html> 
+
